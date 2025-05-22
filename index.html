@@ -8,20 +8,28 @@
     body {
       font-family: Roboto, sans-serif;
       text-align: center;
-      margin-top: 100px;
+      margin: 0;
+      padding: 40px 20px;
       background-color: rgb(37, 42, 52);
       color: white;
+      box-sizing: border-box;
+    }
+
+    img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      margin-bottom: 30px;
     }
 
     a.button {
       display: inline-block;
       padding: 12px 24px;
-      font-size: 18px;
-      background-color: #ffffff;
+      font-size: 1rem;
+      background-color: #252A3C;
       color: #252a34;
       text-decoration: none;
       border-radius: 8px;
-      margin-top: 20px;
       transition: background-color 0.3s;
     }
 
@@ -29,9 +37,15 @@
       background-color: #dddddd;
     }
 
-    img {
-      max-width: 600px;
-      margin-bottom: 20px;
+    @media (max-width: 600px) {
+      a.button {
+        font-size: 0.95rem;
+        padding: 10px 20px;
+      }
+
+      body {
+        padding: 30px 10px;
+      }
     }
   </style>
 </head>
